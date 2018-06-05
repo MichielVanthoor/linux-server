@@ -3,9 +3,9 @@
 This project only contains a README-file with the steps needed to access a web application hosted on Google Cloud.
 
 * You can connect to the server using following IP Address and SSH port:
-  * IP Address: ``
-  * SSH port: ``
-* The complete URL to my hosted web application is http://
+  * IP Address: `35.204.112.13`
+  * SSH port: `2200`
+* The complete URL to my hosted web application is http://35.204.112.13/
 * The software installed and configuration changes made, consist of:
   * Adding the grader user `sudo adduser grader`
   * Giving admin rights to grader user
