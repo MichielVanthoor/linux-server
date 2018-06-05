@@ -11,10 +11,12 @@ This project only contains a README-file with the steps needed to access a web a
   * Giving admin rights to grader user
      * Create new config file `sudo touch /etc/sudoers.d/grader`
      * Insert `grader ALL=(ALL) NOPASSWD:ALL` in this file using your favorite text editor
-     * Public and Private key generated using ``
-  * Configured firewall rules to allow SSH (port 2200), HTTP (port 80), and NTP (port 123) connections
-  * `TODO`Change the default SSH Port in `/etc/ssh/sshd_config` to port `2200`
-     * 
+  * Configuring firewall rules to allow SSH (port 2200), HTTP (port 80), and NTP (port 123) connections
+  * Configuring `/etc/ssh/sshd_config` using your favourite text editor
+      * `TODO`Change the default SSH Port in to port `2200`
+      * Change `#PermitRootLogin no` to `PermitRootLogin yes`
+      * `TODO`Reload this config using `/etc/init.d/sshd restart`
+  * `TODO` Generating Public and Private key on client machine
 
 
      
