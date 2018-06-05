@@ -8,8 +8,8 @@ The web application itself can be found [here](https://github.com/MichielVanthoo
   * SSH port: ``
 * The complete URL to my hosted web application is http://
 * The software installed and configuration changes made, consist of:
-  * Add the grader user `sudo adduser grader`
-  * Give admin rights to grader user
+  * Adding the grader user `sudo adduser grader`
+  * Giving admin rights to grader user
      * Create new config file `sudo touch /etc/sudoers.d/grader`
      * Insert `grader ALL=(ALL) NOPASSWD:ALL` in this file using your favorite text editor
      * Public and Private key generated using ``
