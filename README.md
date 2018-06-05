@@ -1,7 +1,7 @@
 # linux-server
 
 This project only contains a README-file with the steps needed to access a web application hosted on Google Cloud.
-The web application itself caan be found [here](https://github.com/MichielVanthoor/catalog_app).
+The web application itself can be found [here](https://github.com/MichielVanthoor/catalog_app).
 
 * You can connect to the server using following IP Address and SSH port:
   * IP Address: ``
