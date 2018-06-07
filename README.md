@@ -13,11 +13,12 @@ This project only contains a README-file with the steps needed to access a web a
      * Insert `grader ALL=(ALL) NOPASSWD:ALL` in this file using your favorite text editor
   * Configuring firewall rules to allow SSH (port 2200), HTTP (port 80), and NTP (port 123) connections
   * Configuring `/etc/ssh/sshd_config` using your favourite text editor
-      * `TODO`Change the default SSH Port in to port `2200`
+      * Change the default SSH Port in to port `2200`
       * Change `#PermitRootLogin no` to `PermitRootLogin yes`
-      * `TODO`Reload this config using `/etc/init.d/sshd restart`
-  * `TODO` Generating Public and Private key on client machine
-
+      * Reboot the server to reconfigure the settings `sudo reboot`
+  * Generating Public and Private key on client with `ssh-keygen` command
+      * Place the public key on the server using [these steps](https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys)
+      
 
      
 * List of third-party resources used
