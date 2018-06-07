@@ -18,8 +18,13 @@ This project only contains a README-file with the steps needed to access a web a
       * Reboot the server to reconfigure the settings `sudo reboot`
   * Generating Public and Private key on client with `ssh-keygen` command
       * Place the public key on the server using [these steps](https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys)
-      
-
+  * Install Apache HTTP web server `sudo apt-get install apache2`
+  * Install Web Server Gateway interface `sudo apt-get install libapache2-mod-wsgi`
+  * Install the application
+      * Change directory `cd /var/www`
+      * Clone application from Github `sudo git clone https://github.com/MichielVanthoor/catalog_app`
+      * Add `WSGIScriptAlias / /var/www/catalog_app/vagrant/catalog/catalog_app.wsgi` to the `/etc/apache2/sites-enabled/000-default.conf` file
+      * Restart Apache with `sudo apache2ctl restart`
      
 * List of third-party resources used
   * [The Deployed Web Application The web application](https://github.com/MichielVanthoor/catalog_app).
