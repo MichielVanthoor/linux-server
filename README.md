@@ -25,8 +25,11 @@ This project only contains a README-file with the steps needed to access a web a
       * Clone application from Github `sudo git clone https://github.com/MichielVanthoor/catalog_app`
       * Add `WSGIScriptAlias / /var/www/catalog_app/vagrant/catalog/catalog_app.wsgi` to the `/etc/apache2/sites-enabled/000-default.conf` file
       * Restart Apache with `sudo apache2ctl restart`
-     
-* List of third-party resources used
-  * [The Deployed Web Application The web application](https://github.com/MichielVanthoor/catalog_app).
- 
+  * Install the requirements for running the application
+      * `sudo apt-get install python-pip`
+      * `sudo dpkg-reconfigure locales`
+      * `sudo pip install SQLAlchemy`
+      * `sudo pip install Flask`
+      * `sudo pip install oauth2client`
+      * `sudo apt-get install sqlite3 libsqlite3-dev`
 * The private key needed to connect to the server can be obtained by reaching out to michielvanthoor@gmail.com
